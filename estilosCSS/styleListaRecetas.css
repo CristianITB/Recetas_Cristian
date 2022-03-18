@@ -1,0 +1,138 @@
+body{
+    background-image: url(../imagenes/fondoFrutasYVerduras.jpg);
+}
+.imgTitulo{
+    background-color: lightyellow;
+}
+header, header ul, header ul li, header ul li a{
+    background: lightyellow;
+}
+
+/* ----- Cabecera ----- */
+.cabecera{
+    background-color:  rgb(238, 238, 211);
+    margin: 0% 30% 0% 10%;
+    padding: 1% 3%;
+    text-align: left;
+    border: 2px solid black;
+    border-bottom: none;
+}
+.cabecera p:first-child{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* ----- Lateral Derecho ----- */
+.lateralDerecho{
+    background-color:  rgb(218, 218, 73);
+    float: right;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    color: rgb(25, 150, 25);
+    padding-left: 10px;
+    text-align: left;
+    position: sticky;
+    top: 10%;
+    margin-right: 5%;
+}
+.lateralDerecho ul{
+    padding: 0%;
+    border: 0%;
+}
+.lateralDerecho li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.lateralDerecho li a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-size: 1.1em;
+    transition: all .5s;
+}
+.lateralDerecho li a:hover{
+    font-size: 1.2em;
+    color: rgb(42, 197, 42);
+
+}
+.lateralDerecho img{
+    float: left;
+    margin-right: 4%;
+    width: 20px;
+    height: 20px;
+    transition: all .3s;
+}
+.lateralDerecho img:hover{
+    transform: scale(1.2);
+}
+
+/* ----- Seccion recetas ----- */
+
+section{
+    margin: 0% 30% 0% 10%;
+    background-color: rgb(238, 238, 211);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    border: 2px solid black;
+    border-top: none;
+}
+section img{
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+section article{
+    border-top: 1px solid black;
+    margin: 1rem;
+    width: 100%;
+    padding-top: 3%;
+    padding-left: 3%;
+}
+.tituloReceta{
+    margin-top: 0%;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+    transition: all .5s;
+}
+.tituloReceta:hover{
+    font-size: 1.4em;
+    color: rgb(228, 72, 72);
+}
+section article div:nth-child(2){
+    margin: 0% 12%;
+    padding: 0.5% 2%;
+    background-color: rgb(224, 224, 163);
+}
+.icon{
+    max-width: 4%;
+    max-height: 4%;
+}
+
+/* ------ Paginación ------ */
+.paginacion{
+    width: 45%;
+    margin-top: 5%;
+    margin-left: 16%;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 211);
+    padding: 5px 0px;
+}
+.paginacion a{
+    font-weight: bold;
+    display: inline;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 211);
+    padding: 0px 20px;
+    text-decoration: none;
+    color: black;
+    transition: all .5s;
+}
+.paginacion a:hover{
+    background-color: rgb(201, 201, 115);
+}

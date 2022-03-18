@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="../estilosCSS/styleGeneral.css">
+		<link rel="stylesheet" href="../estilosCSS/styleFormulario.css" />
+		<title>Formulario Delicias Kitchen</title>
+	</head>
+	<body>
+		<img class="imgTitulo" alt="Imagen del título" src="../imagenes/Logo-Delicias.png"/>
+		<header>
+			<nav class="menu">
+				<ul>
+					<li><a target="blank" href="../index.html">INICIO</a></li>
+					<li><a target="blank" href="https://es.wikipedia.org/wiki/Mi_(nota)">SOBRE MÍ</a></li>
+					<li><a target="blank" href="listaRecetas.html">RECETAS</a></li>
+					<li><a target="blank" href="formulario.html">CONTACTO</a></li>
+					<li><a target="blank" href="https://www.twitch.tv/">OTRAS COSAS</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+            <form action="formulario.html" method="get">
+                <p><b>¿Quieres darte de alta en nuestra web? ¡Házlo así de fácil!</b></p>
+                <section class="informacionPersonal">
+                    <div class="nombre">
+                        <label for="fname">Nombre:</label>
+                        <input type="text" name="fname" id="fname" placeholder="Escribe tu nombre" required tabindex="1">
+                    </div>
+                    <div class="apellidos">
+                        <label for="lname">Apellidos:</label>
+                        <input type="text" name="lname" id="lname" placeholder="Escribe tu nombre" required tabindex="2">                    
+                    </div>
+                    <div>
+                        <label for="sexo">Sexo:</label>
+                        <input type="radio" name="sexo">Masculino
+                        <input type="radio" name="sexo">Femenino
+                    </div>
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Escribe tu email" required tabindex="3">
+                    </div>
+                    <div class="contraseña">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" name="password" placeholder="Escribe tu contraseña" required tabindex="4">
+                    </div>
+                </section>
+                <section class="informacionExtra">
+                    <div class="idiomas">
+                        <label for="sexo">Idiomas:</label>
+                        <input type="checkbox" name="idiomas">Català
+                        <input type="checkbox" name="idiomas">Español
+                        <input type="checkbox" name="idiomas">English
+                        <input type="checkbox" name="idiomas">Otros: (especificar)
+                        <input type="text" name="idiomas" placeholder="Italiano, Francés, Ruso...">
+                    </div>
+                    <div class="pais">
+                        <label for="paises">País: </label>
+                        <select name="Paises">
+                            <option value="?">España</option>
+                            <option value="?">Francia</option>
+                            <option value="?">Andorra</option>
+                            <option value="?">Portugal</option>
+                            <option value="?">Otro</option>
+                        </select>
+                    </div>
+                </section>
+
+                <p><b>¿Quieres sugerirnos alguna receta?</b></p>
+                <section class="receta">
+                    <div class="nomrbeReceta">
+                        <label for="fname">Nombre de la receta:</label>
+                        <input type="text" name="fname" id="fname" placeholder="Escribe el nombre de la receta" tabindex="5">
+                    </div>
+                    <div class="tiempoPreparacion">
+                        <label for="hora">Tiempo de preparación:</label>
+                        <input type="time" name="hora" tabindex="6">
+                    </div>
+                    <div class="dificultadReceta">
+                        <label for="range">Dificultad de la receta:</label>
+                        <input type="range" name="dificultad" min="0" max="100">
+                    </div>
+                    <div class="tipoDeReceta">
+                        <label for="Cocina">Tipo de Receta: </label>
+                        <input type="text" id="probandodatalist" list="lista" placeholder="Pasta, Arroz, Veggie...">
+                        <datalist id="lista">
+                            <option value="Pasta"></option>
+                            <option value="Arroz"></option>
+                            <option value="Veggie"></option>
+                            <option value="Frito"></option>
+                            <option value="Sopa"></option>
+                            <option value="Japonés"></option>
+                            <option value="Chino"></option>
+                            <option value="Otro"></option>
+                        </datalist>   
+                    </div>
+                </section>
+                <section class="explicacionReceta">
+                    <div class="cuadroExplicacion">
+                        <label for="explicacion">Pasos a seguir:</label><br><br>
+                        <textarea rows="8" cols="60" placeholder="¡Cuéntanos cómo cocinar ese maravilloso plato!" tabindex="7"></textarea>        
+                    </div>
+                    <div class="cuadroIngredientes">
+                        <label for="explicacion">Ingredientes necesarios:</label><br><br>
+                        <textarea rows="8" cols="60" placeholder="¡Cuéntanos qué necesitamos para cocinar ese maravilloso plato!" tabindex="8"></textarea>        
+                    </div>
+                    <div class="adjuntarImagenes">
+                        <label for="archivo">¡Muéstranos cómo te queda a ti ese plato!</label><br><br>
+                        <input type="file" name="archivo"><br><br>
+                    </div>
+                </section>
+
+                <p><b>¿Quieres dejarnos algún comentario? ¡Lo leeremos encantados!</b></p>
+                <section class="comentarios">
+                    <div class="cuadroComentarios">
+                        <label for="explicacion">Déjanos tu comentario:</label><br><br>
+                        <textarea rows="8" cols="50" placeholder="¡Cuéntanos cómo podemos mejorar nuestro servicio!" tabindex="9"></textarea>        
+                    </div>
+                    <div class="fechaResponder">
+                        <label for="fecha">¿Cuándo quieres que te respondamos?:</label><br><br>
+                        <input type="date" name="fecha" tabindex="10">
+                    </div>
+                </section>
+                <section class="enviar">
+                    <div class="botonEnviar">
+                        <input type="submit" value="Enviar" aria-selected="true">
+                    </div>
+                    <div class="botonReestablecer">
+                        <input type="reset" value="Reestablecer parámetros">
+                    </div>
+                </section>
+                <hr>
+                <a href= "formulario.html">
+                    <br>
+                    <input type="button" name="f5" value="Recargar página"><br><br>
+                </a>
+            </form>
+        </main>
+        <footer>
+            <nav>
+				<ul>
+					<li><a target="blank" href="https://facebook.com">FACEBOOK</a></li>
+					<li><a target="blank" href="https://twitter.com">TWITTER</a></li>
+					<li><a target="blank" href="https://instagram.com">INSTAGRAM</a></li>
+					<li><a target="blank" href="https://pinterest.com">PINTEREST</a></li>
+					<li><a target="blank" href="https://gmail.com">EMAIL</a></li>
+					<li><a target="blank" href="https://ca.wikipedia.org/wiki/Xarxa_social">RSS</a></li>
+				</ul>
+			</nav>
+        </footer>
+    </body>
+</html>
+
